@@ -72,7 +72,7 @@ extension UIView {
         layer.shadowColor = UIColor.gray.cgColor
         layer.shadowOpacity = 0.25
         layer.shadowOffset = CGSize(width: 0, height: 4)
-        layer.shadowRadius = 0.5
+        layer.shadowRadius = 5
     }
 }
 
@@ -189,7 +189,7 @@ extension CACornerMask {
 }
 
 extension UIImage {
-    static func circle(diameter: CGFloat = 29, width: CGFloat = 0.5, color: UIColor? = UIColor.lightGray.withAlphaComponent(0.5), fill: UIColor? = .white) -> UIImage? {
+    static func circle(diameter: CGFloat = 28, width: CGFloat = 0.5, color: UIColor? = UIColor.lightGray.withAlphaComponent(0.5), fill: UIColor? = .white) -> UIImage? {
         let circleLayer = CAShapeLayer()
         circleLayer.fillColor = fill?.cgColor
         circleLayer.strokeColor = color?.cgColor
